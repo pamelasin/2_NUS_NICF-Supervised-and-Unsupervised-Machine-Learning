@@ -14,6 +14,17 @@
     - Remove stop words | None
     - Lemmatizer | Stemmer | None
     - 1-gram | 1-gram and 2-gram
+- Assuming stratification, a dumb model predicting the majority class has a 57% accuracy. 
+- Pipeline 3 has best F1 score = 0.81
+- Best model and parameters:
+    - TFIDF
+    - ngram_range = (1, 2)
+    - Don't remove stop words
+    - SGD
+    - alpha = 0.0001
+    - loss = 'hinge'
+    - penalty = 'elasticnet
+- Score of 0.79252 on Kaggle
 - Files include dataset and Python code. 
 
 
